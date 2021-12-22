@@ -35,8 +35,10 @@ Coding guidance: Combine "clean, object-oriented code" with "working software".
 
 What would you do if you had more time? Which trade-offs did you take?
 
-* FILL-ME 1
-* FILL-ME 2
-
+* I have made assumptions on the data set being correct and each line containing just 3 values delimited with ", ". I would have preferred to write additional check for the correctness.
+* No checks done for 2 people having the same DOB.
+* I have refactored the processing of the file including parsing and finding out required results into a different class called ProcessFile, which could have been structured in order to make it more scalable.
+* Would be nice if parsed entities were created into an object called Address, would be useful if the parsed file has to used elsewhere[reducing boilerplate where necessary].
+* Missed out on writing more Junit tests.
 
 Have fun!
